@@ -1,19 +1,18 @@
 :root{
-    --cor-de-fundo: #0a7adb;
-    --cor-principal: #1122b6;
-    --cor-secundaria: #080d35;
-    --cor-destaque: #2fbded;
-    --cor-texto: #d7f9ff;
+    --cor-fundo: #105592;
+    --cor-principal: #1523a1 ;
+    --cor-secundaria: #283597;
+    --cor-destaque: #2297ac;
+    --cor-texto: #7ce8fc;
 }
 
 body{
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
 }
 
 .caixa-principal{
@@ -33,6 +32,15 @@ button{
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
-    transition: backgroud-color 0.3s;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
 
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+.caixa-perguntas{
+    padding-bottom: 10px;
 }
